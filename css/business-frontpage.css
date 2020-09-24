@@ -9,11 +9,46 @@ header{
   font-family: 'Comic Neue', cursive;
 }
 
+.topImg{
+  text-align:left;
+  transform: rotate(-20deg);
+}
+
+.hrHeader{
+  background-color:rgb(107, 107, 107);
+}
+
+.slogan{
+  position:relative;
+  top:70px;
+}
+
 /************************* Navigation Bar ************************/
 
 .navbar{
   background-color: #28A745;
   font-family: 'Comic Neue', cursive;
+}
+
+/************************* Contact content ************************/
+.iconContact{
+  color:#28A745;
+  border-right:solid 1px rgb(218, 218, 218);
+}
+
+.fa-phone{
+  padding:70px 0 0 0;
+  transform: rotate(800deg);
+  position:relative;
+  left:40px;
+}
+
+.fa-envelope{
+  padding:15px 0 0 0;
+}
+
+.info{
+  padding:10px 0;
 }
 
 /************************* Summary ************************/
