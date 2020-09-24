@@ -56,3 +56,11 @@ header{
 .div-description{
   line-height: 1.6;
 }
+
+.div-square {
+  border: solid 1px #28A745;
+  text-align: center;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+}
