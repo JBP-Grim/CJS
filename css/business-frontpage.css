@@ -1,8 +1,58 @@
-/*!
- * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
- */
 body {
   padding-top: 56px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/************************* Header ************************/
+
+header{
+  font-family: 'Comic Neue', cursive;
+}
+
+/************************* Navigation Bar ************************/
+
+.navbar{
+  background-color: #28A745;
+  font-family: 'Comic Neue', cursive;
+}
+
+/************************* Summary ************************/
+
+.summary{
+  font-size: 1.2rem;
+  color:rgb(61, 61, 61);
+}
+
+/************************* Main Services ************************/
+
+.mainServices{
+  text-align:center;
+}
+
+.main-service{
+  margin:30px 50px;
+}
+
+.card-title{
+  font-weight: 700;
+}
+
+.hr-mainServices:after{
+  content:"Main Services";
+  padding:0 20px;
+  background-color:white;
+  position:relative;
+  bottom:14px;
+}
+
+.card-body{
+  height:80px;
+  padding:25px 0 0;
+  margin:0;
+}
+
+/************************** description *****************************/
+
+.div-description{
+  line-height: 1.6;
 }
