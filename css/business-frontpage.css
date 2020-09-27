@@ -124,10 +124,43 @@ header{
   margin:0;
 }
 
+.imgCrop {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.imgMoveCrop {
+  position: relative;
+  bottom: 120px;
+}
+
 /************************** description *****************************/
 
 .div-description{
   line-height: 1.6;
+}
+
+/************************** carousel *****************************/
+
+.carouselMargin{
+padding-top: 20px;
+}
+
+.carousel-indicators .active{
+  background-color: #126425;
+}
+
+.carousel-indicators .inactive{
+  background-color: #28A745;
+}
+
+.list-position{
+  position: relative;
+}
+
+.carouserController{
+  background-color: #28A745;
+  width: 50px;
 }
 
 /************************** guarantee *****************************/
