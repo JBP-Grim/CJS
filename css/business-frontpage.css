@@ -3,6 +3,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.hr-subtitle{
+  margin:120px 0 60px 0;
+  text-align:left;
+}
+
 /************************* Header ************************/
 
 header{
@@ -66,7 +71,7 @@ header{
   width:100%;
   background-color:rgb(97, 97, 97);
   text-align: center;
-  margin:70px 0 0 0;
+  margin:40px 0 0 0;
 }
 
 .imgEcological{
@@ -104,14 +109,10 @@ header{
   font-weight: 700;
 }
 
-.hr-mainServices{
-  margin:150px 0 60px 0;
-}
-
 .hr-mainServices:after{
   content:"Main Services";
   font-size: 2rem;
-  padding:0 20px;
+  padding:0 20px 0 0;
   background-color:white;
   position:relative;
   bottom:24px;
@@ -129,10 +130,30 @@ header{
   line-height: 1.6;
 }
 
-.div-square {
-  border: solid 1px #28A745;
-  text-align: center;
-  margin: auto;
-  width: 600px;
-  height: 600px;
+/************************** guarantee *****************************/
+
+.hr-guarantee:after{
+  content:"C.J.S Guarantee";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.imgGuarantee{
+  width: 200px;
+  margin:0 0 20px 0;
+}
+
+.h2Guarantee{
+  color: grey;
+  margin: 0 0 60px 0;
+}
+
+/************************** footer *****************************/
+
+footer{
+  background-color: #28A745;
+  padding:25px 0;
 }
