@@ -19,14 +19,20 @@ $(document).ready(function(){
                     if(a === 0){
                         imgAppend += ` active`
                     }
+                    formatName = val
+                    formatName = formatName.replace(/[_]/g," ").replace(/\d|\.(jpe?g|png)$/g, "")
                     imgAppend += `">
                                     <img class="d-block w-100" src="${folder}${val}" alt="${val}" style="width:auto; height: 600px; object-fit: scale-down">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="carouselTitles"><strong>${formatName}</strong></h5>
+                                    </div>
                                 </div>`
                     $("#carouselServicesInner").append(imgAppend);
+                    $("#carouselServices").carousel("pause")
                     a++;
                 }
                 else if(val.match(/\.(mp4)$/)){
-                    console.log("LSADDASDAsd")
+                    //console.log("LSADDASDAsd")
                 }
             });
         }

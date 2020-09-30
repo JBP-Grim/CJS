@@ -163,6 +163,11 @@ padding-top: 20px;
   width: 50px;
 }
 
+.carouselTitles {
+  background-color: rgba(235, 235, 235, 0.315);
+  color: #000;
+}
+
 /************************** guarantee *****************************/
 
 .hr-guarantee:after{
