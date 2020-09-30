@@ -187,7 +187,7 @@ padding-top: 20px;
 /************************** footer *****************************/
 
 footer{
-  background-color: #28A745;
+  background-color: #6b6b6b;
   padding:25px 0;
 }
 
@@ -233,6 +233,10 @@ footer{
 
 /******************************************************************** COVID PAGE***********************************************************************/
 
+.mainContent{
+  position:relative;
+}
+
 /************************** Title *****************************/
 
 .covidTitle{
@@ -245,6 +249,119 @@ footer{
   line-height: 2;
 }
 
+/************************** Section 1 *****************************/
+
 .h3Covid{
   padding:40px 0 40px 0;
+}
+
+.covidIcon{
+  color:rgb(188, 209, 0);
+  padding:40px 0 0 0;
+}
+
+.divList1{
+  padding:0 20%;
+}
+
+.hrContent{
+ text-align: center;
+}
+
+.hrContent::after{
+  content: url('../img/leavesICO.png');
+  background-color:white;
+  position:relative;
+  margin:10px;
+  bottom:14px;
+}
+
+/************************** Section 2 *****************************/
+
+.covidIcon2{
+  color:rgb(0, 115, 209);
+}
+
+.divList2{
+  padding:0 18% 50px;
+}
+
+/************************** bubles *****************************/
+
+.bubleSection{
+  position:fixed;
+  bottom:80px;
+  right:10px;
+}
+
+.buble{
+  width:60px;
+  height:60px;
+  background-color:blue;
+  margin:15px 10px;
+  border-radius:100%;
+  box-shadow: 4px 4px 8px #3535355b;
+}
+
+.buble:hover{
+  color: #dfdfdf;
+}
+
+.bubleMail{
+  background-color: #08b1b1;
+  color:white;
+}
+
+.bubleFacebook{
+  background-color:#3b5998;
+  color:white;
+}
+
+.mailIcon{
+  position:relative;
+  left:13px;
+}
+
+.fbIcon{
+  position:relative;
+  left:20px;
+  top:14px;
+}
+
+/************************** sendMail *****************************/
+
+.sendMail{
+  width: 420px;
+  height: 500px;
+  background-color: #cacaca;
+  border-radius: 10px;
+  position:fixed;
+  bottom:80px;
+  right:10px;
+  opacity: 90%;
+}
+
+.closeButton{
+  content:"x";
+  color:rgb(255, 255, 255);
+  background-color: #727272;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:5px 13px;
+}
+
+.mailCloseIcon{
+  position:relative;
+  right:5px;
+}
+
+.inputSection span, .inputSection input{
+  display:inline-block;
+}
+
+.inputSection input{
+  width:150px;
+}
+
+.inputP{
 }

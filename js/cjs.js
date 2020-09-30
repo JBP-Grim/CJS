@@ -1,5 +1,7 @@
 
 $(document).ready(function(){  
+    $(".sendMail").hide();
+
     var folder = "./Img/reel/";
     $.ajax({
         url : folder,
@@ -30,3 +32,16 @@ $(document).ready(function(){
         }
     });  
 });
+
+$(".bubleMail").click(function(){
+    toggleIcons();
+});
+
+$(".closeButton").click(function(){
+    toggleIcons();
+});
+
+function toggleIcons(){
+    $(".sendMail").animate({width: 'toggle'});
+    $(".bubleSection").animate({width: 'toggle'});
+}
