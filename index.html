@@ -290,26 +290,28 @@
   </div>
 
   <div class="sendMail">
-    <div class="closeButton">
-      <i class="fas fa-times-circle mailCloseIcon"></i>
-    </div>
-    <div class="inputSection">
-      <h3 class="mailH3">Send an E-mail to us</h3>
-      <p class="inputP">
-        <span>Your E-mail</span>
-        <input type="email" class="form-control inputMail" required="true">
-      </p>
-      <p class="inputP">
-        <span>Subject</span>
-        <input class="form-control inputSubject">
-      </p>
-      <p class="inputP pBody">
-      <span>Body</span>
-      <textarea class="form-control inputBody" rows="4"></textarea>
-      </p>
-      <hr>
-      <button id="btnMail" class="btn btn-success">Send Mail</button>
-    </div>
+    <form onSubmit="ja()">
+      <div class="closeButton">
+        <i class="fas fa-times-circle mailCloseIcon"></i>
+      </div>
+      <div class="inputSection">
+        <h3 class="mailH3">Send an E-mail to us</h3>
+        <p class="inputP">
+          <span>Your E-mail</span>
+          <input type="email" class="form-control inputMail" placeholder="@example.com" required>
+        </p>
+        <p class="inputP">
+          <span>Subject</span>
+          <input class="form-control inputSubject" required>
+        </p>
+        <p class="inputP pBody">
+        <span>Body</span>
+        <textarea class="form-control inputBody" rows="4" required></textarea>
+        </p>
+        <hr>
+        <button id="btnMail" class="btn btn-success">Send Mail</button>
+      </div>
+    </form>
   </div>
 
   <!-- Bootstrap core JavaScript -->

@@ -52,6 +52,10 @@ function toggleIcons(){
     $(".bubleSection").animate({width: 'toggle'});
 }
 
-$('#btnMail').click(function(){
-    console.log($('.inputMail').val());
-});
+function ja(){
+    var email = $('.inputMail').val(); 
+    var subject = $('.inputSubject').val();
+    var body = $('.inputBody').val();
+
+    console.log(email +" "+ subject +" "+ body)
+}
