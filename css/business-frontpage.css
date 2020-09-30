@@ -343,7 +343,8 @@ footer{
   position:fixed;
   bottom:80px;
   right:10px;
-  opacity: 90%;
+  opacity: 92%;
+  text-align: center;
 }
 
 .closeButton{
@@ -353,6 +354,11 @@ footer{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding:5px 13px;
+  text-align: left;
+}
+
+.mailH3{
+  margin:30px 0;
 }
 
 .mailCloseIcon{
@@ -365,8 +371,44 @@ footer{
 }
 
 .inputSection input{
-  width:150px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.inputSection span{
+  padding:7px 20px;
+  background-color: #535353;
+  color:white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pBody span{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  width: 100%;
+}
+
+.inputMail{
+  width:180px;
+}
+
+.inputSubject{
+  width:210px;
+}
+
+.inputBody{
+  width:320px;
+  max-height: 110px;
+  min-height: 110px;
 }
 
 .inputP{
+  margin:20px 50px; 
+}
+
+.pBody{
+  text-align: center;
+  padding:10px 0;
 }

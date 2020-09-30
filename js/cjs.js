@@ -51,3 +51,7 @@ function toggleIcons(){
     $(".sendMail").animate({width: 'toggle'});
     $(".bubleSection").animate({width: 'toggle'});
 }
+
+$('#btnMail').click(function(){
+    console.log($('.inputMail').val());
+});

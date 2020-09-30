@@ -294,24 +294,21 @@
       <i class="fas fa-times-circle mailCloseIcon"></i>
     </div>
     <div class="inputSection">
-      <h3>Send a E-mail to us</h3>
-      <br>
+      <h3 class="mailH3">Send an E-mail to us</h3>
       <p class="inputP">
-        <span>Your E-mail:</span>
-        <input class="form-control inputMail">
+        <span>Your E-mail</span>
+        <input type="email" class="form-control inputMail" required="true">
       </p>
       <p class="inputP">
-        <span>Subject:</span>
+        <span>Subject</span>
         <input class="form-control inputSubject">
       </p>
-      <p class="inputP">
-      <span>Body:</span>
-      <input class="form-control">
+      <p class="inputP pBody">
+      <span>Body</span>
+      <textarea class="form-control inputBody" rows="4"></textarea>
       </p>
-      <br>
       <hr>
-      <br>
-      <button class="btn btn-success inputBody">Send Mail</button>
+      <button id="btnMail" class="btn btn-success">Send Mail</button>
     </div>
   </div>
 
