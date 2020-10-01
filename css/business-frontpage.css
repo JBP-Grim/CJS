@@ -70,6 +70,10 @@ header{
 
 /************************* Summary ************************/
 
+#infoSummary, #infoContact{
+  padding-top: 70px;
+}
+
 .summary{
   font-size: 1.2rem;
   color:rgb(61, 61, 61);
@@ -109,7 +113,8 @@ header{
 
 /************************* Main Services ************************/
 
-.mainServices{
+#mainServices{
+  padding-top: .1px;
   text-align:center;
 }
 
@@ -242,6 +247,7 @@ padding-top: 20px;
 .h2Guarantee{
   color: grey;
   margin: 0 0 60px 0;
+  font-family: 'Dancing Script', cursive;
 }
 
 /************************** footer *****************************/
@@ -466,4 +472,78 @@ footer{
 .pBody{
   text-align: center;
   padding:10px 0;
+}
+
+/*************************************************************************** Responsiveness ********************************************************************************************/
+
+@media (max-width:991px){
+  
+  /************************* Header ************************/
+
+  #navbarResponsive{
+    text-align: center;
+  }
+
+  .repsponsiveTitle{
+    text-align: center;
+    position:relative;
+    bottom:100px;
+  }
+
+  .slogan{
+    position:relative;
+    top:40px;
+  }
+
+  .headerImgContainer{
+    position:absolute;
+    max-height: 755px;
+    overflow: hidden;
+    opacity:50%;
+  }
+  
+  .headerImg{
+    width: 1510px;
+    position:relative;
+    right:400px;
+  }
+
+  /************************* Info ************************/
+
+  .responsiveMap{
+    margin-bottom:30px;
+  }
+
+  .responsiveCell{
+    margin-bottom:35px;
+  }
+
+  /************************* Ecologic div ************************/
+
+  .divContEco{
+    margin:30px 40px;
+    font-size: 1.5rem;
+  }
+
+  .btnEcologic{
+    margin:0;
+  }
+
+  /************************* modals ************************/
+
+  .imgModalFooter{
+    transform: rotate(30deg);
+  }
+
+  /************************* covid ************************/
+
+  .divList2{
+    padding: 0 150px 50px 150px;
+  }
+
+  .covidIcon2{
+    position:relative;
+    padding-top:10px;
+    right:10px;
+  }
 }

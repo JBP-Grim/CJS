@@ -21,23 +21,28 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">C.J.S</a>
+      <a class="navbar-brand" href="#">C.J.S.</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><strong><em>Us vs COVID-19<span class="sr-only">(current)</span></em></strong></a>
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#infoContact">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#infoContact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#mainServices">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./covid19.html"><strong><em>Us vs COVID-19</em></strong></a>
           </li>
         </ul>
       </div>
@@ -110,32 +115,53 @@
         </div>
     </div>
 
-    <div class="bubleSection">
-      <a href="mailto:#Customerservice@commercial-cjs.com">
-        <div class="bubleMail buble">
-          <i class="fas fa-envelope fa-2x mailIcon"></i>
-        </div>
-      </a>
-      <a href="https://www.facebook.com/CJS-Commercial-Janitorial-Services-102585244944168/?view_public_for=102585244944168" target="blank">
-        <div class="bubleFacebook buble">
-          <i class="fab fa-facebook-f fa-2x fbIcon"></i>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <!-- /.container -->
-
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p class="m-0 text-white">Copyright &copy; Commercial Sanitorial Services - 2020</p>
     </div>
   </footer>
 
+  <div class="bubleSection">
+    <a>
+      <div class="bubleMail buble">
+        <i class="fas fa-envelope fa-2x mailIcon"></i>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/CJS-Commercial-Janitorial-Services-102585244944168/?view_public_for=102585244944168" target="blank">
+      <div class="bubleFacebook buble">
+        <i class="fab fa-facebook-f fa-2x fbIcon"></i>
+      </div>
+    </a>
+  </div>
+
+  <div class="sendMail">
+    <form onSubmit="sendMail();return false">
+      <div class="closeButton">
+        <i class="fas fa-times-circle mailCloseIcon"></i>
+      </div>
+      <div class="inputSection">
+        <h3 class="mailH3">Send an email to us</h3>
+        <p class="inputP">
+          <span>Your E-mail</span>
+          <input type="email" class="form-control inputMail" placeholder="@example.com" required>
+        </p>
+        <p class="inputP">
+          <span>Subject</span>
+          <input class="form-control inputSubject" required>
+        </p>
+        <p class="inputP pBody">
+        <span>Body</span>
+        <textarea class="form-control inputBody" rows="4" required></textarea>
+        </p>
+        <hr>
+        <button id="btnMail" class="btn btn-success">Send Mail</button>
+      </div>
+    </form>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/cjs.js"></script>
 </body>
 </html>
