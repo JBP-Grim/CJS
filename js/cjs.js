@@ -52,10 +52,32 @@ function toggleIcons(){
     $(".bubleSection").animate({width: 'toggle'});
 }
 
-function ja(){
+function sendMail(){
     var email = $('.inputMail').val(); 
     var subject = $('.inputSubject').val();
     var body = $('.inputBody').val();
 
-    console.log(email +" "+ subject +" "+ body)
+    let infoJson = JSON.stringify({
+        'email' : email,
+        'subject' : subject,
+        'body' : body
+    });
+
+    $.ajax({
+        type: "POST",
+        url: "index.php",
+        contentType: "application/json; charset=utf-8",
+        data: infoJson,
+        dataType: "json",
+        success: function(response){
+            this.response = response;
+
+            if(this.response.success === "ok"){
+                console.log("email send");
+            }
+            else{
+                console.log("email error");
+            }
+        }
+    });
 }
