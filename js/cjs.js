@@ -62,16 +62,15 @@ function sendMail(){
         'subject' : subject,
         'body' : body
     });
-
     $.ajax({
         type: "POST",
-        url: "index.php",
+        url: "./sendContactEmail.php",
         contentType: "application/json; charset=utf-8",
         data: infoJson,
         dataType: "json",
         success: function(response){
+            console.log(response)
             this.response = response;
-
             if(this.response.success === "ok"){
                 console.log("email send");
             }
