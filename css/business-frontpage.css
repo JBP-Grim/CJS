@@ -20,12 +20,24 @@ header{
 }
 
 .hrHeader{
-  background-color:rgb(107, 107, 107);
+  background-color:rgb(189, 189, 189);
 }
 
 .slogan{
   position:relative;
   top:70px;
+}
+
+.headerImgContainer{
+  position:absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  opacity:50%;
+}
+
+.headerImg{
+  width: 100%;
 }
 
 /************************* Navigation Bar ************************/
@@ -134,6 +146,36 @@ header{
   bottom: 120px;
 }
 
+/************************* All Services ************************/
+
+#allServices{
+  margin:70px 0;
+}
+
+.hrAllServices::after{
+  content:"All Services";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.allServicesList{
+  margin:60px 70px;
+}
+
+.imgAllServices{
+  width: 500px;
+  position:relative;
+  right:100px;
+}
+
+.imgContainer{
+  max-height: 350px;
+  overflow: hidden;
+}
+
 /************************** description *****************************/
 
 .div-description{
@@ -141,6 +183,19 @@ header{
 }
 
 /************************** carousel *****************************/
+
+.hrCarousel::after{
+  content:"Gallery";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.carousel{
+  margin:60px 0 0;
+}
 
 .carouselMargin{
 padding-top: 20px;
