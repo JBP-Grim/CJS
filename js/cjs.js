@@ -1,6 +1,6 @@
 
 $(document).ready(function(){  
-    $(".sendMail").hide();
+    setImgSize();
 
     var folder = "./Img/reel/";
     $.ajax({
@@ -38,6 +38,15 @@ $(document).ready(function(){
         }
     });  
 });
+
+$(window).resize(function() {
+    setImgSize();
+});
+
+function setImgSize(){
+    var heightVal = $('header').height();
+    $('.headerImgContainer').css('max-height',heightVal);
+}
 
 $(".bubleMail").click(function(){
     toggleIcons();
