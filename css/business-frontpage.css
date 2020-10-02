@@ -341,7 +341,7 @@ footer{
 }
 
 .hrContent::after{
-  content: url('../img/leavesICO.png');
+  content: url('../Img/leavesICO.png');
   background-color:white;
   position:relative;
   margin:10px;
