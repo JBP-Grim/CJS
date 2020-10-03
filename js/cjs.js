@@ -91,6 +91,10 @@ function sendMail(){
                 $('.inputMail').val('');
                 $('.inputSubject').val('');
                 $('.inputBody').val('');
+
+                setTimeout(function(){
+                    toggleIcons();
+                }, 1800);
             }
             else{
                 $('.alert-danger').show();

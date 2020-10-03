@@ -138,10 +138,10 @@
   </div>
 
   <div class="sendMail">
-    <form onSubmit="sendMail();return false">
-      <div class="closeButton">
-        <i class="fas fa-times-circle mailCloseIcon"></i>
-      </div>
+    <div class="closeButton">
+      <i class="fas fa-times-circle mailCloseIcon"></i>
+    </div>
+    <form class="formMail" onSubmit="sendMail();return false">
       <div class="inputSection">
         <h3 class="mailH3">Send an email to us</h3>
         <p class="inputP">
@@ -157,9 +157,26 @@
         <textarea class="form-control inputBody" rows="4" required></textarea>
         </p>
         <hr>
+        <div class="alert alert-danger mr-5 ml-5" role="alert">
+          An error has ocurred, please try again later.
+        </div>
         <button id="btnMail" class="btn btn-success">Send Mail</button>
       </div>
     </form>
+
+    <div class="divSuccessAnimation">
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+      <div class="alert alert-success mr-5 ml-5" role="alert">
+        Mail sended!
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
