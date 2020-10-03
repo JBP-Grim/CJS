@@ -50,6 +50,9 @@ function setImgSize(){
 
 $(".bubleMail").click(function(){
     toggleIcons();
+    $('.formMail').show();
+    $('.divSuccessAnimation').hide();
+    $('.alert-danger').hide();
 });
 
 $(".closeButton").click(function(){
@@ -62,6 +65,7 @@ function toggleIcons(){
 }
 
 function sendMail(){
+
     var email = $('.inputMail').val(); 
     var subject = $('.inputSubject').val();
     var body = $('.inputBody').val();
@@ -81,10 +85,15 @@ function sendMail(){
             console.log(response)
             this.response = response;
             if(this.response.success === "ok"){
-                console.log("email send");
+                $('.formMail').fadeToggle();
+                $('.divSuccessAnimation').fadeToggle(1000);
+
+                $('.inputMail').val('');
+                $('.inputSubject').val('');
+                $('.inputBody').val('');
             }
             else{
-                console.log("email error");
+                $('.alert-danger').show();
             }
         }
     });
