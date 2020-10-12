@@ -38,7 +38,6 @@ header{
 
 .headerImg{
   width: 100%;
-  margin-top: -10%;
 }
 
 /************************* Navigation Bar ************************/
@@ -239,8 +238,24 @@ padding-top: 20px;
 }
 
 .carouselTitles {
-  background-color: rgba(235, 235, 235, 0.315);
+  background-color: rgba(235, 235, 235, 0.6);
   color: #000;
+}
+
+/************************** teamwork *****************************/
+
+.hr-teamwork:after{
+  content:"C.J.S Teamwork";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.imgTeamwork{
+  width: 720px;
+  margin:0 0 20px 0;
 }
 
 /************************** guarantee *****************************/
@@ -257,12 +272,6 @@ padding-top: 20px;
 .imgGuarantee{
   width: 200px;
   margin:0 0 20px 0;
-}
-
-.h2Guarantee{
-  color: grey;
-  margin: 0 0 60px 0;
-  font-family: 'Dancing Script', cursive;
 }
 
 /************************** footer *****************************/
@@ -596,7 +605,14 @@ footer{
     width: 500px;
     position: relative;
     right:90px;
-}
+  }
+
+  /************************** teamwork *****************************/
+
+  .imgTeamwork{
+    width: 100%;
+    margin:0 0 20px 0;
+  }
 
   /************************* modals ************************/
 
