@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Commercial Janitorial Services</title>
+  <link rel="shortcut icon" href="Img/cjs.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/025420b8ec.js" crossorigin="anonymous"></script>  
+  <link href="css/business-frontpage.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><i class="fab fa-envira"></i> <strong>C.J.S.</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#infoContact"><i class="fas fa-info-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#infoContact"><i class="fas fa-id-card"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#mainServices"><i class="fas fa-concierge-bell"></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./career.html"><strong><em><i class="fas fa-briefcase"></i> Career Oportunities</em></strong>
+            <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./covid19.html"><i class="fas fa-virus"></i> Us vs COVID-19</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mainContent">
+    <iframe id="career" title="Make a career with us" width="100%" height="900" src="https://recruiting.paylocity.com/recruiting/jobs/All/c52de40f-a7a2-42eb-84fd-7918baf5bf98/CJS">
+
+    </iframe>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="m-0 text-white">Copyright &copy; Commercial Sanitorial Services - 2020</p>
+    </div>
+  </footer>
+
+  <div class="bubleSection">
+    <a>
+      <div class="bubleMail buble">
+        <i class="fas fa-envelope fa-2x mailIcon"></i>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/CJS-Commercial-Janitorial-Services-102585244944168/?view_public_for=102585244944168" target="blank">
+      <div class="bubleFacebook buble">
+        <i class="fab fa-facebook-f fa-2x fbIcon"></i>
+      </div>
+    </a>
+  </div>
+
+  <div class="sendMail">
+    <div class="closeButton">
+      <i class="fas fa-times-circle mailCloseIcon"></i>
+    </div>
+    <form class="formMail" onSubmit="sendMail();return false">
+      <div class="inputSection">
+        <h3 class="mailH3">Send an email to us</h3>
+        <p class="inputP">
+          <span>Your E-mail</span>
+          <input type="email" class="form-control inputMail" placeholder="@example.com" required>
+        </p>
+        <p class="inputP">
+          <span>Subject</span>
+          <input class="form-control inputSubject" required>
+        </p>
+        <p class="inputP pBody">
+        <span>Body</span>
+        <textarea class="form-control inputBody" rows="4" required></textarea>
+        </p>
+        <hr>
+        <div class="alert alert-danger mr-5 ml-5" role="alert">
+          An error has ocurred, please try again later.
+        </div>
+        <button id="btnMail" class="btn btn-success">Send Mail</button>
+      </div>
+    </form>
+
+    <div class="divSuccessAnimation">
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+      <div class="alert alert-success mr-5 ml-5" role="alert">
+        Mail sent!
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/cjs.js"></script>
+</body>
+</html>

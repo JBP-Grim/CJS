@@ -1,8 +1,864 @@
-/*!
- * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
- */
 body {
   padding-top: 56px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hr-subtitle{
+  margin:120px 0 60px 0;
+  text-align:left;
+}
+
+/************************* Header ************************/
+
+header{
+  font-family: 'Comic Neue', cursive;
+}
+
+.topImg{
+  text-align:left;
+  transform: rotate(-20deg);
+}
+
+.hrHeader{
+  background-color:rgb(189, 189, 189);
+}
+
+.slogan{
+  position:relative;
+  top:70px;
+}
+
+.headerImgContainer{
+  position:absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  opacity:55%;
+}
+
+.headerImg{
+  width: 100%;
+}
+
+/************************* Navigation Bar ************************/
+
+.navbar{
+  background-color: #28A745;
+  font-family: 'Comic Neue', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:white;
+}
+
+.nav-link{
+  margin:0 7px;
+  color:white;
+}
+
+/************************* Contact content ************************/
+.iconContact{
+  color:#28A745;
+  border-right:solid 1px rgb(218, 218, 218);
+}
+
+.fa-phone{
+  padding:70px 0 0 0;
+  transform: rotate(800deg);
+  position:relative;
+  left:40px;
+}
+
+.fa-envelope{
+  padding:15px 0 0 0;
+}
+
+.info{
+  padding:10px 0;
+}
+
+/************************* Summary ************************/
+
+#infoSummary, #infoContact{
+  padding-top: 70px;
+}
+
+.summary{
+  font-size: 1.2rem;
+  color:rgb(61, 61, 61);
+}
+
+/************************* Ecological ************************/
+
+.divEcological{
+  position:relative;
+  height:300px;
+  width:100%;
+  background-color:rgb(97, 97, 97);
+  text-align: center;
+  margin:40px 0 0 0;
+  overflow: hidden;
+}
+
+.imgEcological{
+  position:relative;
+  bottom:220px;
+  width:100%;
+  opacity:80%;
+}
+
+.divContEco{
+  position:absolute;
+  width:88%;
+  top:0;
+  color:white;
+  font-size:2rem;
+  padding:20px 70px 20px;
+  background-color:#4b4b4b5b;
+  border:solid 3px #aaaaaa;
+  margin:37px 62px 52px 62px;
+}
+
+.btnEcologic{
+  margin:40px 0 0 0;
+}
+
+/************************* Main Services ************************/
+
+#mainServices{
+  padding-top: .1px;
+  text-align:center;
+}
+
+.main-service{
+  margin:30px 50px;
+}
+
+.card-title{
+  font-weight: 700;
+}
+
+.hr-mainServices:after{
+  content:"Main Services";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.card-body{
+  height:80px;
+  padding:25px 0 0;
+  margin:0;
+}
+
+.imgCrop {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.imgMoveCrop {
+  position: relative;
+  bottom: 120px;
+}
+
+/************************* All Services ************************/
+
+#allServices{
+  margin:70px 0;
+}
+
+.hrAllServices::after{
+  content:"All Services";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.allServicesList{
+  margin:60px 70px;
+}
+
+.imgAllServices{
+  width: 500px;
+  position:relative;
+  right:100px;
+}
+
+.imgContainer{
+  max-height: 350px;
+  overflow: hidden;
+}
+
+/************************** description *****************************/
+
+.div-description{
+  line-height: 1.6;
+}
+
+/************************** carousel *****************************/
+
+.hrCarousel::after{
+  content:"Gallery";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.carousel{
+  margin:60px 0 0;
+  position:relative;
+  z-index: 0;
+}
+
+.carouselMargin{
+padding-top: 20px;
+}
+
+.carousel-indicators .active{
+  background-color: #126425;
+}
+
+.carousel-indicators .inactive{
+  background-color: #28A745;
+}
+
+.list-position{
+  position: relative;
+}
+
+.carouserController{
+  background-color: #28A745;
+  width: 50px;
+}
+
+.carouselTitles {
+  background-color: rgba(235, 235, 235, 0.6);
+  color: #000;
+}
+
+/************************** teamwork *****************************/
+
+.hr-teamwork:after{
+  content:"C.J.S Teamwork";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.imgTeamwork{
+  width: 720px;
+  margin:0 0 20px 0;
+}
+
+/************************** guarantee *****************************/
+
+.hr-guarantee:after{
+  content:"C.J.S Guarantee";
+  font-size: 2rem;
+  padding:0 20px 0 0;
+  background-color:white;
+  position:relative;
+  bottom:24px;
+}
+
+.imgGuarantee{
+  width: 200px;
+  margin:0 0 20px 0;
+}
+
+/************************** footer *****************************/
+
+footer{
+  background-color: #6b6b6b;
+  padding:25px 0;
+}
+
+/************************** Modal 1 *****************************/
+
+.modalHeader{
+  padding: 40px 80px 20px 80px;
+}
+
+.modalBody{
+  padding: 40px 80px 70px 80px;
+  line-height: 2;
+}
+
+.closeModalBtn{
+  position:absolute;
+  top:30px;
+  right:60px;
+  color:red;
+  border:solid 1px;
+}
+
+.modalFooter{
+  display:inline-block;
+  width:100%;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #28A745 100%);
+  border:none;
+}
+
+.modalFooterBtn{
+  width:200px;
+  position: relative;
+  bottom:30px;
+}
+
+.imgModalFooter{
+ width:100px;
+ position:absolute;
+ bottom:30px;
+ right:60px;
+}
+
+/******************************************************************** COVID PAGE***********************************************************************/
+
+.mainContent{
+  position:relative;
+}
+
+/************************** Title *****************************/
+
+.covidTitle{
+  padding:40px 0 0 0;
+}
+
+/************************** Body *****************************/
+
+.containerBody{
+  line-height: 2;
+}
+
+/************************** Section 1 *****************************/
+
+.h3Covid{
+  padding:40px 0 40px 0;
+}
+
+.covidIcon{
+  color:rgb(188, 209, 0);
+  padding:40px 0 0 0;
+}
+
+.divList1{
+  padding:0 20%;
+}
+
+.hrContent{
+ text-align: center;
+}
+
+.hrContent::after{
+  content: url('../Img/leavesICO.png');
+  background-color:white;
+  position:relative;
+  margin:10px;
+  bottom:14px;
+}
+
+/************************** Section 2 *****************************/
+
+.covidIcon2{
+  color:rgb(0, 115, 209);
+}
+
+.divList2{
+  padding:0 18% 50px;
+}
+
+/************************** bubles *****************************/
+
+.bubleSection{
+  position:fixed;
+  bottom:80px;
+  right:10px;
+}
+
+.buble{
+  width:60px;
+  height:60px;
+  background-color:blue;
+  margin:15px 10px;
+  border-radius:100%;
+  box-shadow: 4px 4px 8px #3535355b;
+}
+
+.buble:hover{
+  color: #dfdfdf;
+}
+
+.bubleMail{
+  background-color: #08b1b1;
+  color:white;
+}
+
+.bubleFacebook{
+  background-color:#3b5998;
+  color:white;
+}
+
+.mailIcon{
+  position:relative;
+  left:13px;
+}
+
+.fbIcon{
+  position:relative;
+  left:20px;
+  top:14px;
+}
+
+/************************** sendMail *****************************/
+
+.sendMail{
+  width: 420px;
+  height: 500px;
+  background-color: #cacaca;
+  border-radius: 10px;
+  position:fixed;
+  bottom:80px;
+  right:10px;
+  opacity: 92%;
+  text-align: center;
+  display: none;
+  overflow-y: scroll;
+}
+
+.closeButton{
+  content:"x";
+  color:rgb(255, 255, 255);
+  background-color: #727272;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:5px 13px;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+}
+
+#btnMail{
+  margin:0 0 10px;
+}
+
+.mailH3{
+  margin:40px 0 30px;
+}
+
+.mailCloseIcon{
+  position:relative;
+  right:5px;
+}
+
+.inputSection span, .inputSection input{
+  display:inline-block;
+}
+
+.inputSection input{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.inputSection span{
+  padding:7px 20px;
+  background-color: #535353;
+  color:white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pBody span{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  width: 105%;
+}
+
+.inputMail{
+  width:160px;
+}
+
+.inputSubject{
+  width:190px;
+}
+
+.inputBody{
+  width:320px;
+  max-height: 110px;
+  min-height: 110px;
+}
+
+.inputP{
+  margin:20px 50px; 
+}
+
+.pBody{
+  text-align: center;
+  padding:10px 0;
+}
+
+/*************************************************************************** Responsiveness ********************************************************************************************/
+
+@media (max-width:991px){
+  
+  /************************* Header ************************/
+
+  #navbarResponsive{
+    text-align: center;
+  }
+
+  .repsponsiveTitle{
+    text-align: center;
+    position:relative;
+    bottom:100px;
+  }
+
+  .slogan{
+    position:relative;
+    top:40px;
+  }
+
+  .headerImgContainer{
+    position:absolute;
+    overflow: hidden;
+    opacity:50%;
+  }
+  
+  .headerImg{
+    width: 1500px;
+    height: 100%;
+    position:relative;
+    right:400px;
+  }
+
+  .topImg{
+    width:100%;
+    margin:0 0 20px 0;
+    transform: rotate(0deg);
+  }
+
+  /************************* Info ************************/
+
+  .responsiveMap{
+    margin-bottom:3%;
+  }
+
+  .responsiveCell{
+    margin-bottom:10%;
+  }
+
+  /************************* Ecologic div ************************/
+
+  .divContEco{
+    margin:10% 6%;
+    font-size: 1.5rem;
+    padding:3% 1%;
+  }
+
+  .imgEcological{
+    position:relative;
+    bottom:60px;
+    right: 50%;
+    width: 160%;
+    opacity:80%;
+  }
+
+  .btnEcologic{
+    margin:0;
+    font-size: 1rem;
+  }
+
+  /************************* main services ************************/
+  
+  .main-service{
+    margin: 30px 5%;
+  }
+
+  .card-title{
+    font-size: 1.2rem;
+  }
+
+  .imgCrop{
+    height: 200px;
+  }
+
+  .imgMoveCrop{
+    bottom:35%;
+  }
+
+  /************************* all services ************************/
+
+  .allServicesList {
+    margin: 60px 0;
+  }
+
+  .imgAllServices {
+    width: 500px;
+    position: relative;
+    right:90px;
+  }
+
+  /************************** teamwork *****************************/
+
+  .imgTeamwork{
+    width: 100%;
+    margin:0 0 20px 0;
+  }
+
+  /************************* modals ************************/
+
+  .imgModalFooter{
+    transform: rotate(30deg);
+  }
+
+  .modalHeader {
+    padding: 30px 20px;
+  }
+
+  .modalBody {
+    padding: 40px 20px 80px 20px;
+    line-height: 2;
+  }
+
+  .closeModalBtn {
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    color: red;
+    border: solid 1px;
+  }
+
+  .imgModalFooter {
+    width: 100px;
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+  }
+
+  /************************* footer ************************/
+
+  footer {
+    font-size: 12px;
+  }
+
+/************************* Bubles ************************/
+
+  .bubleSection {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  /************************* covid ************************/
+
+  .divList2{
+    padding: 0;
+  }
+
+  .covidIcon2{
+    padding:20px 20%;
+  }
+
+  .divList1{
+    padding: 0;
+  }
+
+  .divIcon{
+    padding:0 20%;
+  }
+
+  /************************* mail ************************/
+
+  .sendMail {
+    width: 94%;
+    height: 80%;
+    position: fixed;
+    bottom: 10px;
+    overflow-y: scroll;
+  }
+
+  .pBody {
+    padding: 10px 0;
+  }
+
+  .inputP span{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+  }
+
+  .inputMail, .inputSubject {
+    width: 100%;
+  }
+
+  .inputBody {
+    width: 100%; 
+    max-height: 110px;
+    min-height: 110px;
+  }
+
+}
+
+/**
+ * Extracted from: SweetAlert
+ * Modified by: Istiak Tridip
+ */
+ .success-checkmark {
+  width: 80px;
+  height: 115px;
+  margin: 0 auto;
+}
+.success-checkmark .check-icon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 4px solid #4caf50;
+}
+.success-checkmark .check-icon::before {
+  top: 3px;
+  left: -2px;
+  width: 30px;
+  transform-origin: 100% 50%;
+  border-radius: 100px 0 0 100px;
+}
+.success-checkmark .check-icon::after {
+  top: 0;
+  left: 30px;
+  width: 60px;
+  transform-origin: 0 50%;
+  border-radius: 0 100px 100px 0;
+  animation: rotate-circle 4.25s ease-in;
+}
+.success-checkmark .check-icon::before, .success-checkmark .check-icon::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.success-checkmark .check-icon .icon-line {
+  height: 5px;
+  background-color: #4caf50;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+}
+.success-checkmark .check-icon .icon-line.line-tip {
+  top: 46px;
+  left: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+  animation: icon-line-tip 0.75s;
+}
+.success-checkmark .check-icon .icon-line.line-long {
+  top: 38px;
+  right: 8px;
+  width: 47px;
+  transform: rotate(-45deg);
+  animation: icon-line-long 0.75s;
+}
+.success-checkmark .check-icon .icon-circle {
+  top: -4px;
+  left: -4px;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: content-box;
+  border: 4px solid rgba(76, 175, 80, 0.5);
+}
+.success-checkmark .check-icon .icon-fix {
+  top: 8px;
+  width: 5px;
+  left: 26px;
+  z-index: 1;
+  height: 85px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes icon-line-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@keyframes icon-line-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+.divSuccessAnimation{
+  display: none;
+  margin: 25% 0;
+}
+
+.alert-danger{
+  display: none;
 }
